@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const { authRoutes } = require("./routes");
+const { authRoutes, cartRoutes } = require("./routes");
 
 
 app.use(express.json());
@@ -16,6 +16,7 @@ app.get("/", async (req,res) => {
 
 // auth
 app.use("/auth",authRoutes)
+app.use("/",cartRoutes)
 
 
 

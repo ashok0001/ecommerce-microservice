@@ -1,3 +1,4 @@
 module.exports={
-    authRoutes:require('./auth.route')
+    authRoutes:require('./auth.route'),
+    cartRoutes:require('./cart.route')
 }
